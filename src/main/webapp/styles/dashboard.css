@@ -1,0 +1,1623 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: .875rem;
+}
+.feather {
+  width: 16px;
+  height: 16px;
+  vertical-align: text-bottom;
+}
+.btn-primary {
+  color:#fff !important;
+}
+
+.plus-sqr-icon {
+     width: 15px;
+     height: 15px;
+}
+
+/*****************  Navbar CSS  ******************/
+
+.navbar-brand {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, .25);
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+}
+.navbar .form-control {
+  padding: -13.75rem 1rem;
+  border-width: 0;
+  border-radius: 0;
+}
+.form-control-dark {
+  color: #fff;
+  background-color: rgba(255, 255, 255, .1);
+  border-color: rgba(255, 255, 255, .1);
+}
+.form-control-dark:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+}
+.navbar-nav .dropdown-menu {
+  position: absolute !important;
+}
+[role="main"] {
+  padding-top: 48px;
+}
+
+/*****************  Navbar CSS End  ****************/
+
+
+/***************** Charting CSS   *****************/
+
+.chart {
+  overflow-x: hidden;
+}
+.cp {
+  cursor: pointer;
+}
+.Single--Node {
+  fill: #fff;
+  stroke: #ccc;
+  stroke-width: 1;
+  border-radius: 10px;
+}
+.Title {
+  font-weight: 600;
+  font-size: 15px;
+}
+.TermType, .Duration {
+  fill: #989898;
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.second-title {
+  font-size: 13px;
+}
+.date-line {
+  stroke: #f5f5f5;
+  stroke-width: 1;
+}
+.Date-Block, .Date-Block-Outline {
+  fill: #fff;
+  stroke: #ccc;
+}
+.start-lines, .end-lines {
+  stroke-width: 1;
+}
+.chart{
+  overflow: auto;
+}
+.range-select p{
+  margin-left: 20px;
+}
+.empty_message_block {
+  border: #ccc;
+  border-radius: 4px;
+}
+.CurrentDay-Area {
+  stroke: #60bdf1;
+}
+.vert {
+  writing-mode: vertical-lr;
+  transform: rotate(-180deg);
+  text-orientation: sideways;
+  text-align:left;
+}
+.vertHead {
+  writing-mode: vertical-lr;
+  transform: rotate(-180deg);
+  text-orientation: sideways;
+  text-align:left;
+  height:80px;
+}
+#role-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+/***************** Charting CSS End  ****************/
+
+
+
+/* Agile Capacity and Project Planning Table Colors */
+
+#agile-capacity-page .tbl-bg-l1, #project-forecast-page .tbl-bg-l1 {
+    background-color: #2484C2 !important;
+    color:#fff;
+}
+
+.tbl-bg-l2 {
+    background-color: #EEE !important;
+}
+
+.tbl-bg-l3 {
+    background-color: #fff !important;
+}
+
+.tbl-bg-l4 {
+    background-color: #f8f8f8 !important;
+}
+
+.tbl-bg-l5 {
+    background-color: #fafafa !important;
+}
+
+.attention {
+    color: #ffc107;
+}
+
+.attention-l1 {
+    color: red;
+}
+
+
+
+/***************** User Css  ***************/
+
+.modal-login {
+  display: inline-block;
+  position: fixed;
+  top: 50%;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  width: 600px;
+  height: 100px;
+  margin: auto;
+}
+.modal-login .modal-content-login {
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+}
+.modal-login .modal-header-login {
+  border-bottom: none;
+  position: relative;
+  justify-content: center;
+}
+.modal-login .close {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+.modal-login h4 {
+  color: #636363;
+  text-align: center;
+  font-size: 26px;
+  margin-top: 0;
+}
+.modal-login .modal-content-login {
+  color: #999;
+  border-radius: 1px;
+  margin-bottom: 15px;
+  background: #fff;
+  border: 1px solid #f3f3f3;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  padding: 25px;
+}
+.modal-login .form-group {
+  margin-bottom: 20px;
+}
+.modal-login label {
+  font-weight: normal;
+  font-size: 13px;
+}
+.modal-login .form-control {
+  min-height: 38px;
+  padding-left: 5px;
+  box-shadow: none !important;
+  border-width: 0 0 1px 0;
+  border-radius: 0;
+}
+.modal-login .form-control:focus {
+  border-color: #ccc;
+}
+.modal-login .input-group-addon {
+  max-width: 42px;
+  text-align: center;
+  background: none;
+  border-width: 0 0 1px 0;
+  padding-left: 5px;
+  border-radius: 0;
+}
+.modal-login .btn {
+  font-size: 16px;
+  font-weight: bold;
+  background: #19aa8d;
+  border-radius: 3px;
+  border: none;
+  min-width: 140px;
+  outline: none !important;
+}
+.modal-login .btn:hover, .modal-login .btn:focus {
+  background: #179b81;
+}
+.modal-login .hint-text {
+  text-align: center;
+  padding-top: 5px;
+  font-size: 13px;
+}
+.modal-login .modal-footer-login {
+  color: #999;
+  border-color: #dee4e7;
+  text-align: center;
+  margin: 0 -25px -25px;
+  font-size: 13px;
+  justify-content: center;
+}
+.modal-login a {
+  color: #333a41;
+  text-decoration: none;
+}
+.modal-login a:hover {
+  text-decoration: underline;
+}
+.modal-login .fa {
+  font-size: 21px;
+}
+.trigger-btn {
+  display: inline-block;
+  margin: 100px auto;
+}
+.modal-backdrop {
+  z-index:1020 !important;
+}
+.input-group-addon, .input-group-btn {
+  width: 1%;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+.input-group-addon {
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  color: #555;
+  text-align: center;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 25px;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.form-control::placeholder {
+  color: #A9A9A9;
+}
+.navbar-nav .dropdown-menu {
+  position: absolute !important;
+}
+.token .token-label {
+  float:left !important;
+}
+.token {
+  display: block !important;
+  height:28px !important;
+}
+.token .close {
+  float:right !important;
+}
+.capacity-teams-select {
+  width:230px;
+  margin-top: 35px;
+}
+#login-wag-icon {
+  margin-right: 20px;
+}
+.multiselect-container {
+  width: 100% !important;
+}
+.leftborder{
+  text-align: center;
+}
+
+.role1_team{
+  display: none;
+  background-color:#f5f5f5;
+}
+.team1_project1{
+  display: none;
+}
+.quarterly-header {
+  font-size: x-small !important;
+  font-weight: normal !important;
+  font-family: Arial, sans-serif;
+}
+/*****************  User Css End  ****************/
+
+
+/***************** 7thSense: Table Styling ****************/
+
+/* Theme Colors */
+
+.b-dblue {
+  background-color:#006699  !important;
+}
+.b-dbluecapital {
+  background-color:#086da0  !important;
+}
+.b-ltblue {
+  background-color:#003366 !important;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border: none;
+}
+td {
+  padding: 8px;
+  text-align: center;
+
+}
+th {
+  padding: 8px;
+  text-align: center;
+
+}
+/*tr:hover {
+  background-color:#f5f5f5;
+} */
+.tableBodyScroll tbody {
+  display: block;
+  max-height: 550px;
+  overflow-y: overlay;
+}
+
+
+.clearbg {
+    background:#fff !important;
+}
+
+.bgrad-1 {
+    background:#666666 !important;
+}
+
+.bgrad-2 {
+    background:#CD3726 !important;
+}
+
+.bgrad-3 {
+    background:#508ec8 !important;
+}
+
+
+.tableBodyScroll thead, .tableBodyScroll tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+.tableBodyScroll td {
+    padding:-0.25rem;
+}
+.costEstimateSummary{
+  display: none;
+}
+
+/** Loader & icon **/
+.tbl-loader {
+  z-index:10;position:absolute;top:0;left:0;width:100%;height:100%;text-align:center;transform:translateY(50%);
+}
+.clps {
+  cursor: pointer;min-width: 100px;
+}
+.clpsicon {
+  font-size: 15px;float: right;
+}
+.feather-icon {
+  width: 20px;
+  height: 20px;
+}
+/** Loader & collapse-icon End **/
+
+/** SVG styling **/
+
+.dark-stroke {
+  stroke: black;
+}
+
+.light-stroke {
+  stroke: white;
+}
+
+
+
+/***************** Hilight CSS ****************/
+
+.hilight {
+  cursor: pointer;
+  border: none;
+  text-align: left;
+  outline: none;
+  background-color: #166496;
+  color: white;
+}
+.active, .hilight:hover {
+    background-color: #555;
+}
+.hiddenCell {
+  display: none;
+  width: 35px;
+  text-align: center;
+}
+
+
+/***************** Hilight CSS End ****************/
+
+
+/***************** Modal CSS  ****************/
+
+#div-userModal .modal, #div-roleModal .modal, #div-onePlanModal .modal, #div-teamModal .modal, #div-teamUpdate .modal, #div-projectModal .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+#div-userModal .modal-content, #div-roleModal .modal-content, #div-onePlanModal .modal-content, #div-teamModal .modal-content, #div-teamUpdate .modal-content, #div-projectModal .modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+#div-userModal .modal-header, #div-roleModal .modal-header,#div-onePlanModal .modal-header, #div-teamModal .modal-header, #div-teamUpdate .modal-header, #div-projectModal .modal-header,
+#div-addteamManager .modal-header, #div-teamUpdateManager .modal-header{
+  padding: 2px 16px;
+  color: white;
+  display: block;
+  text-align: center;
+}
+#div-userModal .modal-body, #div-roleModal .modal-body,#div-onePlanModal .modal-body, #div-teamModal .modal-body, #div-teamUpdate .modal-body, #div-projectModal .modal-body  {
+  padding: 16px 16px;
+  text-align: center;
+}
+#div-userModal .modal-footer, #div-roleModal .modal-footer,#div-onePlanModal .modal-footer, #div-teamModal .modal-footer, #div-teamUpdate .modal-footer,#div-projectModal .modal-footer,#div-addteamManager .modal-footer,#div-teamUpdateManager .modal-footer {
+  padding: 2px 16px;
+  color: white;
+}
+@-webkit-keyframes animatetop {
+  from {
+    top:-300px;
+    opacity:0;
+  }
+  to {
+    top:0;
+    opacity:1;
+  };
+}
+@keyframes animatetop {
+  from {
+    top:-300px;
+    opacity:0;
+  }
+  to {
+    top:0;
+    opacity:1;
+  }
+}
+
+
+/***************** Modal CSS End ****************/
+
+
+/***************** Close CSS  ****************/
+
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/***************** Close CSS End  ****************/
+
+
+/***************** Custom Width & Height CSS   ****************/
+
+.w-30{
+  width: 30%;
+}
+.w-33 {
+  width: 33%;
+}
+
+.w-70{
+  width: 70%;
+}
+.w90p{
+  width: 90px;
+}
+.w-90{
+  width: 90%;
+}
+.w-95{
+  width: 95%;
+}
+.w-16 {
+  width: 16%;
+}
+
+.w300p{
+  width: 300px;
+}
+.w200p {
+  width: 200px;
+}
+
+.w194p {
+  width: 194px;
+}
+.w150p {
+  width: 150px;
+}
+.w178p {
+  width: 178px;
+}
+.w170p {
+  width: 170px;
+}
+.w128p {
+  width: 128px;
+}
+
+.w138p {
+  width: 138px;
+}
+
+.h550p {
+  height: 550px;
+}
+
+.w170p {
+    width:170px;
+}
+
+/***************** Custom Width & Height CSS End   ****************/
+
+
+/***************** Custom Margin CSS   ****************/
+
+.m-auto {
+  margin:auto;
+}
+.marg-b60 {
+  margin-bottom: 60px;
+}
+.marg-t50 {
+  margin-top:50px;
+}
+.marg-r5p{
+  margin-right: 5px;
+}
+.marg-t70{
+  margin-top: 45px;
+}
+.marg-l10 {
+  margin-left:10px;
+}
+.marg-l15 {
+  margin-left:15px;
+}
+.marg-l20 {
+  margin-left:20px;
+}
+.marg-l0 {
+  margin-left: 0;
+}
+.marg-r2 {
+  margin-left:10px;
+}
+
+/***************** Custom Margin CSS End  ****************/
+
+
+/***************** Custom Padding CSS   ****************/
+
+.pdg-r-2p{
+  padding-right: 2px;
+}
+.pdg-3p{
+  padding: 3px;
+}
+.pdg-5p{
+  padding: 5px;
+}
+.pdg-t15p{
+  padding-top: 5px;
+}
+.pdg-l17p{
+  padding-left: 17px;
+}
+.pdg-l25p{
+  padding-left: 25px;
+}
+.pdg-r25p{
+  padding-right: 25px;
+}
+.pdg-t18p{
+  padding-top: 5px;
+}
+
+/***************** Custom Padding CSS End  ****************/
+
+
+/***************** Custom Font Size CSS   ****************/
+
+.s-20p{
+  font-size: 20px;
+}
+.s-30p{
+  font-size: 30px;
+}
+.large{
+  font-size: large;
+}
+.bold{
+  font-weight: bold;
+}
+
+.f-m{
+  font-size: small;
+}
+
+/*
+.fS{
+  font-size: small;
+}
+.fS-bisque {
+  font-size: small;
+  background: bisque;
+}
+.fS-lblush {
+  font-size: small;
+  background: lavenderblush;
+}
+*/
+
+/***************** Custom Font Size CSS End  ****************/
+
+
+/***************** Custom Text Indent CSS   ****************/
+
+.t-int6 {
+  text-indent:6.0em;
+}
+.t-int4 {
+  text-indent:4.0em;
+}
+.t-int2-5 {
+  text-indent:2.5em;
+}
+.t-int2 {
+  text-indent:2em;
+}
+.t-int0 {
+  text-indent:0em;
+}
+
+/***************** Custom Text Indent CSS End  ****************/
+
+
+/***************** Custom Background & Color CSS   ****************/
+
+.transparent{
+  background: transparent !important;
+}
+.c-red{
+  color: red;
+}
+.l-gold{
+  color: black; background: lightgoldenrodyellow;
+}
+.m-cushead {
+  color: #FFF; background: #166496;
+}
+.tr-lwh {
+  background: lightslategray; color: white;
+}
+.darkblue{
+  color: darkblue;
+}
+
+.rp-lv-lightblue {
+
+}
+
+
+.tr-d-bg {
+  display: none; background: aliceblue;
+}
+.c-blue {
+  color: darkblue; font-size: x-large;
+}
+.error{
+  background-color: lightpink;
+}
+.tr-dw {
+  display: none; background: white;
+}
+.agile-bg{
+  background: gold;
+}
+.add-plan{
+  color: darkblue; font-size: x-large;
+}
+
+/***************** Custom Background & Color CSS End   ****************/
+
+
+/***********          Reports CSS           ***********/
+
+
+.budget .leader {
+  border: none !important;
+  font-size:smaller !important;
+}
+
+.budget thead th {
+  background: #166496;
+  color: #fff;
+}
+.budget td, .budget tbody th {
+  font-size: smaller;
+  text-align: left;
+}
+.head-child {
+  background: #77a2ca !important;
+}
+.title-cell {
+  min-width: 200;
+}
+.budgetCard {
+  width: 12rem;height: 90px;
+}
+
+.wall {
+    border-right:1px solid #999;
+}
+
+.leader thead th {
+    border-right: 1px solid white;
+    background: #166496;
+    color: #fff;
+    border-top: none;
+    border-bottom: none;
+}
+
+.leader td, .leader tbody th {
+  text-align: left;
+}
+
+.leader td {
+    border-top:solid 1px #bbc2ca;
+    border-right:solid 1px #bbc2ca;
+}
+
+.leadertotal {
+    background: #b3cde6;
+}
+
+.leaderBadge{
+  text-indent:0;
+  margin-right: 5px;
+}
+.clickable {
+  cursor: pointer;
+}
+.child-1st {
+  background: #eff0f1 !important;
+}
+.child-2nd {
+  background: #fff !important;
+}
+.varBg {
+  background: #e69192 !important;
+}
+.varHeadBg {
+  background: #a32b2f !important;
+}
+.varBody {
+  background: #f7dbda !important;
+}
+
+.mop thead th {
+  border-top: none;
+  border-bottom: none;
+  background: #3d82c2;
+}
+.mop tbody tr {
+  background: #dae7f2;
+}
+.mop td {
+  font-size: 12px;
+  text-align: left;
+}
+.BdActRemFCHeaderBg {
+  background: #166496 !important;
+  color: #fff;
+}
+
+.BgRedWhiteFontHeader {
+    background: #CD3726 !important;
+    color: #fff;
+}
+.red {
+  color: #ff4f66;
+}
+.title {
+  background: #fff;
+  min-width: 305px;
+}
+.leader-total {
+  background: #b3cde6;
+}
+
+.leader-varTotal {
+  background: #f3c2c2 !important;
+}
+.total {
+  background: #b3cde6;
+}
+.vartotal {
+  background: #d9d9d9;
+}
+.varGrandTotal {
+  background: #efb5b6;
+  font-weight: bold;
+  font-size: 14px;
+}
+.grandTotal {
+  background: #82b6e6;
+  font-weight: bold;
+  font-size: 14px;
+}
+.center {
+  text-align: center;
+}
+.ITHeader{
+  background: #fef2c5 !important;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/***********          Reports CSS End           ***********/
+
+/********** Agile Team Capacity start **************/
+
+
+.capexOpexSplit{
+    display: none;
+}
+.capexOpexCostSplit{
+    display: none;
+}
+
+
+#agile-capacity-page table, #project-forecast-page table, #index table {
+    border-collapse: collapse;
+    width: 100%;
+    border: none;
+}
+
+#agile-capacity-page td, #project-forecast-page td, #index td {
+    padding: 8px;
+    font-size: smaller;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+#agile-capacity-page .leftborder, #project-forecast-page .leftborder, #index .leftborder {
+    text-align: center;
+}
+
+
+#agile-capacity-page th, #project-forecast-page th, #index th {
+    padding: 8px;
+    font-size:x-small !important;
+    font-weight:normal !important;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+#agile-capacity-page .role1_team, #project-forecast-page .role1_team, #index .role1_team {
+    display: none;
+    background-color:#f5f5f5;
+}
+
+#agile-capacity-page .team1_project1, #project-forecast-page .team1_project1, , #index .team1_project1 {
+    display: none;
+}
+
+#agile-capacity-page .active, .hilight:hover, #project-forecast-page .active {
+  background-color: #555;
+}
+
+#index-tab-content .active {
+  background-color: #fff;
+
+}
+
+#agile-capacity-page .hiddenCell, #project-forecast-page .hiddenCell, #index .hiddenCell {
+    display: none;
+    width: 35px;
+    text-align: center;
+}
+
+
+
+
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+#agile-capacity-page .close, #project-forecast-page .close, #index .close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#agile-capacity-page .close:hover,
+#agile-capacity-page .close:focus,
+ #project-forecast-page .close:hover,
+ #project-forecast-page .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#index .close:hover,
+#index .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#agile-capacity-page .tableBodyScroll tbody, #project-forecast-page .tableBodyScroll tbody, #index .tableBodyScroll tbody {
+  display: block;
+  max-height: 550px;
+  overflow-y: scroll;
+}
+
+#agile-capacity-page .tableBodyScroll thead,
+#agile-capacity-page tbody tr,
+ #project-forecast-page .tableBodyScroll thead,
+ #project-forecast-page tbody tr{
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+#index .tableBodyScroll thead,
+ #index tbody tr{
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+#agile-capacity-page .costEstimateSummary, #project-forecast-page .costEstimateSummary{
+    display: none;
+}
+
+.capexOpexSplit{
+    display: none;
+}
+.capexOpexCostSplit{
+    display: none;
+}
+
+#agile-capacity-page .expanded:after, #project-forecast-page .expanded:after, #index .expanded:after {
+  content: '\2212 \00a0';
+  font-weight: bold;
+  float: left;
+}
+
+#agile-capacity-page .collapsed:after, #project-forecast-page .collapsed:after, #index .collapsed:after {
+  content: "\002B \00a0";
+  font-weight: bold;
+  float: left;
+}
+
+#agile-capacity-page .badge, #project-forecast-page .badge, #index .badge {
+    font-weight: normal !important;
+    font-size:smaller !important;
+}
+
+
+/********** Agile Team Capacity end **************/
+
+
+/************ add modal dialog props *******************/
+
+#div-userModal input, #div-teamModal input {
+    font-size:12px;
+}
+
+ #div-teamModal input {
+
+    width: 120px;
+}
+
+#div-userManagement td {
+    word-break: break-word;
+}
+
+#div-userModal table, #div-teamModal table {
+    table-layout: fixed;
+}
+
+#submit-add-user, #submit-add-agileTeam, #submit-add-project {
+    font-size: .875rem !important;
+}
+
+#div-userModal .select2, #div-onePlanModal .select2, #div-roleModal .select2, #div-projectModal .select2{
+
+    width: 135px !important;
+}
+
+#div-teamModal .select2 {
+    width: 120px !important;
+}
+
+
+#div-onePlanModal #editableTbody1, #div-projectModal editableTbody {
+    table-layout: fixed;
+    display: table;
+    width: 100%;
+}
+
+#div-onePlanModal #editableTbody2 {
+     table-layout: fixed;
+        display: content;
+        width: 100%;
+}
+
+#div-teamModal select {
+    width: 120px !important;
+    height: 28px;
+}
+
+/****** add modal dialog props *******/
+
+
+.under-arrow {
+    fill: red;
+}
+
+.over-arrow {
+    fill: red;
+}
+
+
+/****** Leader view report START ******/
+
+.tbl-col-fixed > thead > tr > th:first-child {
+
+  min-width: 20em;
+  max-width: 20em;
+
+}
+
+.tbl-col-fixed > tbody > tr > td:first-child {
+  background: #fff;
+  min-width: 20em;
+  max-width: 20em;
+}
+
+
+.plus-icon::after {
+  content: "\002B \00a0";
+  font-weight: bold;
+  float: left;
+}
+
+.minus-icon::after {
+  content: '\2212 \00a0';
+  font-weight: bold;
+  float: left;
+}
+
+.tbl-col-fixed thead > tr > th {
+    box-shadow: inset 1px 1px 0 #fff;
+    border : none !important;
+}
+
+.tbl-col-fixed thead > tr:first-child > th {
+    position: sticky;
+    position: -webkit-sticky; /* for Safari */
+    top: 0;
+
+}
+
+.tbl-col-fixed thead > tr:nth-child(2) > th {
+    position: sticky;
+    position: -webkit-sticky; /* for Safari */
+    top: 29px;
+
+}
+
+.tbl-col-fixed thead > tr:nth-child(3) > th {
+    position: sticky;
+    position: -webkit-sticky; /* for Safari */
+    top: 58px;
+
+}
+
+
+.tbl-col-fixed tbody > tr > td:first-child {
+   position: sticky;
+   position: -webkit-sticky; /* for Safari */
+   left: 0;
+   box-shadow: 1px 0px 0 #bbc2ca;
+
+}
+
+.tbl-col-fixed thead th:first-child {
+  left: 0;
+  z-index: 1;
+  box-shadow: 1px 0px 0 #fff;
+}
+
+.tbl-col-fixed thead th:last-child {
+  box-shadow: inset 1px 0px 0 #fff;
+}
+
+.tbl-col-fixed tbody {
+    border-bottom: 1px solid #bbc2ca;
+}
+
+.tbl-col-fixed td:last-child {
+  width: 100%;
+}
+
+/****** Leader view report END ******/
+
+
+#div-addteamManager #select-functionalTeam + span, #div-addteamManager #select-planwellTeamName + span, #div-addteamManager #select-managerId + span{
+    width: 60% !important;
+}
+
+
+
+#div-teamUpdateManager #select-update-functionalTeam + span, #div-teamUpdateManager #select-update-planwellTeamName + span, #div-teamUpdateManager #select-update-managerId + span {
+    width: 60% !important;
+}
+
+
+/************* resource loading new ******************/
+
+#resource-loading-div .pastcostEstimateSummary {
+    display: none;
+}
+
+
+.top-ganttcolor {
+      width: auto;
+      height: 23px;
+      background-color: #00283B;
+      margin-left: 0px;
+}
+
+
+.lob-ganttcolor {
+      width: auto;
+      height: 23px;
+      background-color: #5A7489;
+      margin-left: 0px;
+}
+
+
+
+.project-ganttcolor {
+        width: auto;
+        height: 23px;
+        background-color: #B2CED1;
+        margin-left: 0px;
+}
+
+.agile-ganttcolor {
+        width: auto;
+        height: 23px;
+        background-color: #E5D5BB;
+        margin-left: 0px;
+}
+
+.team-ganttcolor {
+        width: auto;
+        height: 23px;
+        background-color: #C0A980;
+        margin-left: 0px;
+}
+
+.role-ganttcolor {
+        width: auto;
+        height: 23px;
+        background-color: #8B7357;
+        margin-left: 0px;
+}
+
+
+.ganttview td:not(:first-child) {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    overflow-x: hidden;
+
+}
+
+.datepicker {
+    float:right;
+    width:100px;
+}
+
+#div-projectManagement .tab-content .active {
+    background-color: transparent !important;
+}
+
+
+.project thead th {
+    border-right: 1px solid white;
+    background: #166496;
+    color: #fff;
+    border-top: none;
+    border-bottom: none;
+}
+
+.project td, .project tbody th {
+  text-align: left;
+}
+
+.project td {
+    border-top:solid 1px #bbc2ca;
+    border-right:solid 1px #bbc2ca;
+}
+
+
+.pro-tbl-col-fixed > thead > tr > th:first-child {
+
+  min-width: 20em;
+  max-width: 20em;
+
+}
+
+.pro-tbl-col-fixed > tbody > tr > td:first-child {
+  background: #fff;
+  min-width: 20em;
+  max-width: 20em;
+}
+
+
+
+.pro-tbl-col-fixed thead > tr > th {
+    box-shadow: inset 1px 1px 0 #fff;
+    border : none !important;
+}
+
+.pro-tbl-col-fixed thead > tr:first-child > th {
+    position: sticky;
+    position: -webkit-sticky; /* for Safari */
+    top: 0;
+
+}
+
+.pro-tbl-col-fixed thead > tr:nth-child(2) > th {
+    position: sticky;
+    position: -webkit-sticky; /* for Safari */
+    top: 29px;
+
+}
+
+.pro-tbl-col-fixed thead > tr:nth-child(3) > th {
+    position: sticky;
+    position: -webkit-sticky; /* for Safari */
+    top: 58px;
+
+}
+
+
+.pro-tbl-col-fixed tbody > tr > td:first-child {
+   position: sticky;
+   position: -webkit-sticky; /* for Safari */
+   left: 0;
+   box-shadow: 1px 0px 0 #bbc2ca;
+
+}
+
+.pro-tbl-col-fixed thead th:first-child {
+  left: 0;
+  z-index: 1;
+  box-shadow: inset 1px 1px 0 #fff;
+}
+
+.pro-tbl-col-fixed thead th:last-child {
+  box-shadow: inset 1px 1px 0 #fff;
+}
+
+.pro-tbl-col-fixed tbody {
+    border-bottom: 1px solid #bbc2ca;
+}
+
+.index-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.index-widget {
+    width: 46%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+}
+
+.widget-header {
+    background: #2484C2;
+    border: 1px solid black;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+}
+
+.widget-body {
+    border: 1px solid black;
+}
+
+.widget-body div {
+    display: list-item;
+    margin-left: 1.3em;
+    list-style-type: circle;
+    word-break: break-all;
+}
+
+.edit-icon {
+
+    float: right;
+    margin-right: 10px;
+
+}
+
+.key-updates {
+    width: 68%;
+    display:inline-block;
+}
+
+.key-updates-editor-header {
+    margin-bottom:5px;
+}
+
+.how-to-guides {
+    width: 49%;
+    display:inline-block;
+}
+
+.how-to-guides-editor-header {
+    margin-top:2%;
+    margin-bottom:5px;
+}
+
+.faq {
+    width: 49%;
+    display:inline-block;
+    margin-left:10px;
+}
+
+.faq-editor-header {
+    margin-top:2%;
+    margin-bottom:5px;
+}
+
+#activity-feed {
+    background-color: #fff;
+    color: #212529;
+    margin-top: 1%;
+    padding-right: 54px;
+    padding-top: 10px;
+    display: inline-block;
+    border: 1px solid #a9a9a9;
+    border-radius: .25rem;
+    text-align: left;
+    height: 235px;
+    overflow: scroll;
+    width: 100%;
+}
+
+.icon-images {
+    height: 24px;
+    margin-right: 3px;
+}
+
+
+/*** New Style Start ***/
+.select2-container--default .select2-search--inline .select2-search__field {
+    padding: 5px 10px !important;
+    width: 100% !important;
+}
+
+.select2-container--default .select2-selection--multiple {
+    box-shadow: 2px 1px 3px #cccccc;
+    border: 1px solid #ccc !important;
+}
+.select2-results__option {
+    padding: 8px 14px !important;
+}
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+  border: 1px solid #2384c2 !important;
+}
+.select2-container--default .select2-selection--single {
+    border: 1px solid #ccc !important;
+    padding: 5px 0;
+    height: auto !important;
+    box-shadow: 2px 1px 3px #cccccc;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    top: 6px !important;
+    right: 6px !important;
+}
+.select2-container-space {
+    margin-bottom: 2px !important;
+}
+
+.js-top-select-dropdown {
+    margin-bottom: 2px !important;
+}
+
+
+#project-forecast-page td {
+    padding: 12px 8px;
+}
+
+#all-capacity-export, #show-avail-capacity, #show-hours {
+    box-shadow: 2px 1px 3px #ccc;
+}
+
+#capex-opex, #show-dollars, #show-gantt-view {
+    padding: 8px 10px;
+    box-shadow: 2px 1px 3px #ccc;
+}
+#project-forecast-page {
+    padding: 3px 15px;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #2384c2;
+    border-color: #2384c2;
+}
+.btn-group-sm>.btn, .btn-sm {
+    padding: 8px 10px;
+}
+.btn-outline-secondary {
+    border-color: #ccc;
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active {
+    background-color: #2384c2;
+    border-color: #2384c2;
+}
+
+.dropdown-toggle::after {
+    position: relative;
+    top: 3px;
+}
+
+#addTeamModal .modal-header, #addRoleModal .modal-header {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+#addTeamModal .modal-body, #addRoleModal .modal-body {
+    padding: 1rem 1rem 2rem;
+}
+
+input[type="text"], input[type="password"] {
+    box-shadow: 2px 1px 3px #cccccc;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px 5px;
+}
+
+#editable tbody tr:nth-child(odd) {
+    background-color: #f1f1f1;
+}
+#editable tr td, #div-userManagement #editable tr th {
+    padding: 12px 8px;
+    vertical-align: top;
+}
+#div-userModal #editable tbody tr:nth-child(odd),
+#div-roleModal #editable tbody tr:nth-child(odd),
+#div-onePlanModal #editable tbody tr:nth-child(odd),
+#div-teamModal #editable tbody tr:nth-child(odd),
+#div-addteamManager #editable tbody tr:nth-child(odd) {
+   background-color: #fff;
+}
+#div-userModal, #div-roleModal, #div-onePlanModal,
+#div-teamModal, #div-addteamManager {
+   margin-bottom: 20px;
+}
+#div-userModal h2, #div-roleModal h2, #div-onePlanModal h2,
+#div-teamModal h2, #div-addteamManager h2 {
+    font-size: 20px;
+    padding: 10px;
+    margin: 0;
+}
+#div-userModal tr.m-cushead, #div-onePlanModal #editableTbody tr.m-cushead,
+#div-teamModal tr.m-cushead {
+    color: #000;
+}
+#div-teamModal select {
+    height: 40px;
+    box-shadow: 2px 1px 3px #cccccc;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background: #fff;
+    color: #444;
+}
+#sprint-table .sprint tr:nth-child(odd) {
+   background-color: #f1f1f1;
+}
+#sprint-table .sprint tr td {
+    border: 0;
+    vertical-align: middle;
+}
+#sprint-table .switch {
+    margin: 0;
+}
+#sprint-table th, #sprint-table td {
+    padding: 10px 8px;
+
+}
+
+#div-projectManagement {
+    float: left;
+    width: 100%;
+}
+
+.content-nowrap {
+    white-space: nowrap;
+}
+/*** New Style End ***/

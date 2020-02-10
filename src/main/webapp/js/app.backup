@@ -1,0 +1,379 @@
+// appconfig
+var config = {};
+config.contentType = "application/json";
+config.dataType = "json";
+
+var showFailure = function() {
+	alert("Sorry!!! something went wrong. Please try again later.")
+}
+  /*******************start Users Rest api call***************************/
+
+var getUsers = function(successfn, failurefn, data) {
+    var url = "/api/users?typeName=Arrays";
+    service(successfn, failurefn, "GET", url, null, 'users');
+
+}
+
+var addUsers = function(successfn, failurefn, data) {
+    var url = "/api/users/add";
+    service(successfn, failurefn, "POST", url, data);
+}
+
+var updateUsers = function(successfn, failurefn, data, id) {
+    var url = "/api/users/"+id;
+    service(successfn, failurefn, "PUT", url, data);
+}
+
+var deleteUsers = function(successfn, failurefn, data) {
+    var url = "/api/users/"+data;
+    service(successfn, failurefn, "DELETE", url, data);
+}
+
+ /*********************end Users Rest api call***************************/
+
+ /****************************start Role Rest api call*******************/
+
+var getRoles = function(successfn, failurefn) {
+    var url = "/api/role?typeName=Arrays";
+    service(successfn, failurefn, "GET", url,null, 'roles');
+}
+
+var addRole = function(successfn, failurefn, data) {
+	var url = "/api/role/add";
+	service(successfn, failurefn, "POST", url, data);
+}
+
+var updateRole = function(successfn, failurefn, data, id) {
+    var url = "/api/role/"+id;
+    service(successfn, failurefn, "PUT", url, data);
+}
+
+var deleteRole = function(successfn, failurefn, data) {
+    var url = "/api/role/"+data;
+    service(successfn, failurefn, "DELETE", url, data);
+}
+   /***************************end Role Rest api call***************************/
+
+   /****************************start Vendors Rest api call**********************/
+
+var getVendors = function(successfn, failurefn, data) {
+    var url = "/api/vendor?typeName=Arrays";
+    service(successfn, failurefn, "GET", url, null, 'vendors');
+}
+
+var addVendorRow = function(successfn, failurefn, data) {
+    var url = "/api/vendor/add";
+    service(successfn, failurefn, "POST", url, data);
+
+}
+
+var updateVendorRow = function(successfn, failurefn, data, id) {
+    var url = "/api/vendor/"+id;
+    service(successfn, failurefn, "PUT", url, data);
+
+}
+
+var deleteVendorRow = function (successfn, failurefn, id) {
+    var url = "/api/vendor/"+id;
+    service(successfn, failurefn, "DELETE", url);
+}
+
+  /***************************end Vendor Rest api call***************************/
+
+  /***************************start OnePlanProgram Rest api call*****************/
+
+
+var getOnePlanPrograms = function(successfn, failurefn, fiscalYear) {
+    var url = "/api/program/byyear?fiscalYear="+fiscalYear+"&typeName=Arrays";
+    service(successfn, failurefn, "GET", url, 'programs');
+}
+
+var addOnePlanProgram = function(successfn, failurefn, data) {
+    var url = "/api/program/add";
+    service(successfn, failurefn, "POST", url,data);
+}
+
+var updateOnePlanProgram = function(successfn, failurefn, data, id) {
+    var url = "/api/program/"+id;
+    service(successfn, failurefn, "PUT", url, data);
+
+}
+
+var deleteOnePlanPrograms = function(successfn, failurefn, data) {
+    var url = "/api/program/"+data;
+    service(successfn, failurefn, "DELETE", url, data);
+    }
+
+   /***************************end OnePlanProgram Rest api call****************/
+
+   /***********************start AgileTeam Rest api call*********************/
+
+
+var getAgileTeams = function(successfn, failurefn, data) {
+    var url = "/api/teams?typeName=Arrays";
+    service(successfn, failurefn, "GET", url, null, 'teams');
+    }
+
+var addAgileTeam = function (successfn, failurefn, data) {
+    var url = "/api/teams/add";
+    service(successfn, failurefn, "POST", url,data);
+}
+
+var updateAgileTeams = function(successfn, failurefn, data, id) {
+    var url = "/api/teams/" + id;
+    service(successfn, failurefn, "PUT", url, data);
+    }
+
+var deleteAgileTeam = function(successfn, failurefn, data) {
+    var url = "/api/teams/"+data;
+    service(successfn, failurefn, "DELETE", url, data);
+}
+
+ /***********************end AgileTeam Rest api call*********************/
+
+
+ /***********************start Projects Rest api call*********************/
+
+
+    var getProjects = function (successfn, failurefn) {
+
+        var url = "/api/projects?typeName=Arrays";
+        service(successfn, failurefn, "GET", url, null, 'projects');
+
+    }
+
+    var addProject = function (successfn, failurefn, data) {
+
+    }
+
+var updateProjects = function(successfn, failurefn, data, id) {
+    var url = "/api/projects/" + id;
+    service(successfn, failurefn, "PUT", url, data);
+}
+
+var deleteProjects = function(successfn, failurefn, data) {
+    var url = "/api/projects/"+data;
+    service(successfn, failurefn, "DELETE", url, data);
+}
+
+ /***********************end Projects Rest api call*********************/
+
+ /***********************start Billing Type Rest Api call****************************/
+
+ var getBilingType = function(successfn, failurefn, data) {
+     var url = "/api/billing/type";
+     service(successfn, failurefn, "GET", url, null, 'billing');
+
+ }
+
+/***********************end Billing Type Rest Api call****************************/
+
+
+/***********************start Location Type Rest Api call****************************/
+
+var getLocationType = function(successfn, failurefn, data) {
+    var url = "/api/location/type";
+    service(successfn, failurefn, "GET", url, null, 'location');
+
+}
+
+/***********************end Location Type Rest Api call****************************/
+
+
+
+
+
+// ajax service
+var service = function (successfn, failurefn, method, url, data) {
+    $.ajax({
+        type: method,
+        headers: {
+            'Content-Type': config.contentType
+        },
+        url: url,
+        data: data,
+        success: successfn,
+        failure: failurefn,
+        crossDomain: true,
+        dataType: config.dataType
+    }).done(function (data, textStatus, errorThrown) {
+        // post succcess
+    }).fail(function (jqXHR, textStatus, errorThrown) {
+        // handle service failure
+    });
+}
+
+/***********************start login redirect*********************/
+    var redirecttoIndex = function (data) {
+
+        console.log(data);
+        storeUserDataInSession(data);
+        console.log(data);
+        var data = {
+            getUserDataFromSession: function () {
+                var userData = localStorage.getItem('userObject');
+                //localStorage.removeItem('userObject');
+                console.log(userData);
+                return JSON.parse(userData);
+            }
+        }
+
+        if (data.getUserDataFromSession() != null) {
+            var userDataObject = data.getUserDataFromSession();
+            //console.log(userDataObject);
+
+
+            var rpsaccess = userDataObject.rpsAccess;
+            var divpgm = document.getElementById("pgmmanager");
+            var divscm = document.getElementById("scmmaster");
+            var divrcm = document.getElementById("rcemanager");
+            var divadm = document.getElementById("admin");
+
+            if (rpsaccess == "Program Manager") {
+                if (divpgm.style.display === "none") {
+                    divpgm.style.display = "block";
+                } else {
+                    $("#scmmaster").remove();
+                    $("#rcemanager").remove();
+                    $("#admin").remove();
+                }
+            } else if (rpsaccess == "Scrum Master") {
+                if (divscm.style.display === "none") {
+                    divscm.style.display = "block";
+
+                } else {
+                    $("#pgmmanager").remove();
+                    $("#rcemanager").remove();
+                    $("#admin").remove();
+                }
+
+            } else if (rpsaccess == "Resource Manager") {
+                if (divrcm.style.display === "none") {
+                    divrcm.style.display = "block";
+
+                } else {
+                    $("#pgmmanager").remove();
+                    $("#scmmaster").remove();
+                    $("#admin").remove();
+                }
+
+            } else if (rpsaccess == "Admin") {
+
+                if (divadm.style.display === "none") {
+                    divadm.style.display = "block";
+
+                } else {
+                    $("#pgmmanager").remove();
+                    $("#scmmaster").remove();
+                    $("#rcemanager").remove();
+                }
+            }
+        }
+
+    }
+
+    function storeUserDataInSession(userData) {
+        var userObjectString = JSON.stringify(userData);
+        window.sessionStorage.setItem('userObject', userObjectString);
+    }
+
+/***********************end login redirect*********************/
+
+
+
+// util function for comma seperated sring formatter
+    var cleanCSV = function (value) {
+        return (value || '').split(',').filter(Boolean).filter(function (item, index, all) {
+            return (index === all.indexOf(item));
+        });
+    }
+
+    var newTeam = function () {
+        console.log($("#team-id").val());
+        var teamName = $("#team-id").val();
+        $('.nav-tabs').append('<li class="nav-item"><a class="nav-link " data-toggle="tab" href="#' + teamName + '">' + teamName + '</a></li>');
+        $('.tab-content').append('<div class="tab-pane" id="' + teamName + '"><p>&nbsp;</p><div id="content-' + teamName + '"></div><p>&nbsp;</p></div>');
+        window.location.href = "/teams/?teamName=" + teamName;
+    }
+
+    var getParameterValues = function (param) {
+        var url = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+        for (var i = 0; i < url.length; i++) {
+            var urlparam = url[i].split('=');
+            if (urlparam[0] == param) {
+                return decodeURIComponent(urlparam[1]);
+            }
+        }
+    }
+
+// get data from cookie
+    function getCookie(cname) {
+        var name = cname + "=";
+        var decodedCookie = decodeURIComponent(document.cookie);
+        var ca = decodedCookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    }
+
+// event listener for local storage update - to update real time DB
+    function onStorageEvent(storageEvent) {
+
+        console.log(storageEvent);
+    }
+
+    window.addEventListener('storage', onStorageEvent, false);
+
+
+// local storage update
+    Object.getPrototypeOf(localStorage).update = function (key, data) {
+        var objects = localStorage.getItem(key);
+        objects = JSON.parse(objects);
+        if (objects) {
+            objects = objects.concat(data);
+            localStorage.setItem(key, JSON.stringify(objects));
+        } else {
+            localStorage.setItem(key, JSON.stringify(data));
+        }
+    }
+
+    function getCurrentFiscalYear(yearsToAdd) {
+        //get current date
+        var today = new Date();
+
+        //get current month
+        var curMonth = today.getMonth();
+
+        var fiscalYr = "";
+        if (curMonth > 8) { //
+            var currentYear = today.getFullYear() + yearsToAdd;
+            var nextYr1 = (currentYear + 1).toString();
+            fiscalYr = currentYear.toString() + "-" + nextYr1.charAt(2) + nextYr1.charAt(3);
+        } else {
+            var currentYear = today.getFullYear() + yearsToAdd - 1;
+            var nextYr1 = (currentYear + 1).toString();
+            fiscalYr = currentYear.toString() + "-" + nextYr1.charAt(2) + nextYr1.charAt(3);
+        }
+
+        return fiscalYr;
+}
+
+// common place to call logout
+$('.logout').click(function(){
+    localStorage.removeItem('userObject');
+    localStorage.clear();
+    $.ajax({
+        type: "GET",
+        url: "/api/logout",
+        async: false
+    });
+
+    window.location.href= "/";
+});
